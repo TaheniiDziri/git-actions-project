@@ -1,14 +1,14 @@
-name: Broken Workflow
+name: Simple Workflow
 
 on:
   workflow_dispatch:
 
 jobs:
-  broken:
+  simple:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Invalid Syntax
-      run: echo "Hello, World!  
+    - name: Print Hello World
+      run: echo "Hello, World!
